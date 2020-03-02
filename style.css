@@ -114,7 +114,7 @@ body {
 }
 
 /* paragraph */
-p .text {
+p.text {
   margin: 5px 0;
 }
 
