@@ -19,6 +19,12 @@ body {
   margin: 0;
 }
 
+/* Container */
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
 /* Movie Container */
 .movie-container {
   margin: 20px 0;
@@ -105,4 +111,9 @@ body {
 
 .row {
   display: flex;
+}
+
+/* paragraph */
+p.text span {
+  color: #6feaf6;
 }
