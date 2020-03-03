@@ -5,7 +5,7 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 
-const ticketPrice = +movieSelect.value;
+let ticketPrice = +movieSelect.value;
 
 // console.log(typeof ticketPrice);
 
@@ -22,7 +22,9 @@ function updateSelectedCount() {
 }
 // End of updateSelectedCount function
 
-// Add eventListenre to container
+// Add eventListeners
+
+// Seat click event
 container.addEventListener("click", e => {
   if (
     e.target.classList.contains("seat") &&
@@ -33,4 +35,10 @@ container.addEventListener("click", e => {
 
     updateSelectedCount();
   }
+});
+
+// movie select event
+movieSelect.addEventListener("change", e => {
+  ticketPrice = +e.target.value;
+  updateSelectedCount();
 });
